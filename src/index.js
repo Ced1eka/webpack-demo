@@ -1,13 +1,14 @@
-import _ from 'lodash';
-import myName from './myName';
+import _ from "lodash";
+// import myName from "./myName";
 
- function component() {
-   const element = document.createElement('div');
+function component() {
+  const element = document.createElement("div");
 
   // Lodash, now imported by this script
-   element.innerHTML = myName('Dingus');
+  element.innerHTML = _.join(["hello", "webpack"], "");
+  // element.innerHTML = myName("Dingus");
 
-   return element;
- }
+  return element;
+}
 
- document.body.appendChild(component());
+document.body.appendChild(component());
